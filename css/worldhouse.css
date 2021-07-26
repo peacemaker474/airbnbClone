@@ -16,9 +16,6 @@
     color: #484848;
 }
 
-.unlike_house .house {
-}
-
 .house > img {
     width: 290px;
     height: 200px;
@@ -43,7 +40,7 @@
 
 .house .star,
 .another_star{
-    margin-left: 109px;
+    margin-left: 106px;
     font-size: 12px;
     letter-spacing: 0.9px;
 }
