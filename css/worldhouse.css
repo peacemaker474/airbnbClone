@@ -1,0 +1,58 @@
+.world_house{
+    margin-top: 88px;
+}
+
+.world_house > h2{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 51px;
+}
+
+.unlike_house{
+    display: grid;
+    grid-template-columns: 290px 290px 290px 290px;
+    grid-template-rows: 265px 265px;
+    grid-gap: 16px;
+    color: #484848;
+}
+
+.unlike_house .house {
+}
+
+.house > img {
+    width: 290px;
+    height: 200px;
+    margin-bottom: 8px;
+}
+
+.house > button {
+    all: unset;
+    width: 74px;
+    height: 28px;
+    text-align: center;
+    border: 1px solid #484848;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 2px;
+    margin-right: 13px;
+}
+
+.house .nation_name {
+    font-size: 12px;
+}
+
+.house .star,
+.another_star{
+    margin-left: 109px;
+    font-size: 12px;
+    letter-spacing: 0.9px;
+}
+
+.another_star{
+    margin-left: 79px;
+}
+
+.house > p{
+    font-size: 14px;
+    margin-top: 10px;
+}

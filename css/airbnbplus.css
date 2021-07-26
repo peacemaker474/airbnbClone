@@ -1,0 +1,50 @@
+.airbnb_plus{
+    width: 100%;
+    height: 389px;
+    margin-top: 88px;
+}
+
+.airbnb_plus > h2{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.airbnb_plus > span {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.plus_house {
+    width: 100%;
+    height: 310px;
+    background-image: url('../assets/airbnbplus.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.plus_house > img{
+    width: 104.5px;
+    height: 112.3px;
+    margin-bottom: 38px;
+}
+
+.plus_house > button {
+    all: unset;
+    width: 200px;
+    height: 44px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: white;
+    color: #484848;
+    text-align: center;
+}
+.plus_house > button::after{
+    content: "▶";
+    padding-left: 15px;
+}

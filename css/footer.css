@@ -1,0 +1,30 @@
+.support {
+    width: 1206px;
+    height: 509px;
+    margin: 0 80px;
+    display: flex;
+}
+
+.support > ul {
+    padding: 50px 130px 0 0;
+}
+.support .sub_title {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.support > ul > li {
+    padding: 10px;
+    white-space: nowrap;
+    font-size: 15px;
+}
+
+.support > ul > li > a {
+    text-decoration: none;
+    color: rgb(72, 72, 72);
+}
+
+.support > ul > li:hover a{
+    text-decoration: underline;
+    color: rgb(72, 72, 72, 0.9);
+}

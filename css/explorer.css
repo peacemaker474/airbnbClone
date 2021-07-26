@@ -1,0 +1,36 @@
+.explorer{
+    width: 100%;
+    height: 137px;
+    margin-top: 116px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.explorer > h2{
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.e_box {
+    display: flex;
+    align-items: center;
+    width: 392px;
+    height: 85px;
+    border-radius: 12px;
+    margin-right: 14.5px;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.e_box:last-child {
+    margin-right: 0;
+}
+
+.e_box > img{
+    width: 121px;
+    height: 85px;
+    border-radius: 12px 0 0 12px;
+    margin-right: 24px;
+}

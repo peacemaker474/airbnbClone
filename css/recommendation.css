@@ -1,0 +1,84 @@
+.recommendation{
+    width: 100%;
+    height: 400px;
+    margin-top: 88px;
+}
+
+.recommendation > h2{
+    font-size: 24px;
+    font-weight: bold;
+    color: #484848;
+}
+
+.recommendation > span {
+    display: inline-block;
+    width: 551px;
+    height: 38px;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 8px;
+    line-height: 1.4em;
+}
+
+.recommend{
+    display: grid;
+    grid-template-columns: 391px 391px 391px;
+    grid-template-rows: 294px;
+    grid-gap: 16px
+}
+
+.house_rmd {
+    color: #484848;
+    margin-top: 32px;
+}
+
+
+.house_rmd .house_bgImg {
+    width: 100%;
+    height: 239px;
+    background-image: url(../assets/recomd_img1.png);
+    background-size: cover;
+    position: relative;
+}
+
+.house_rmd .another1{
+    background-image: url(../assets/recomd_img2.png);
+    background-size: cover;
+}
+.house_rmd .another2{
+    background-image: url(../assets/recomd_img3.png);
+    background-size: cover;
+}
+
+
+.house_bgImg .bgImg_overray{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+}
+
+.house_bgImg > img {
+    width: 48.9px;
+    height: 52.5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.house_rmd > span {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.house_rmd > p {
+    font-size: 14px;
+
+}

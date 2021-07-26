@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Airbnb</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <img class="logo" src="assets/header_logo.png" alt="header_logo" />
+            <ul class="menu_content">
+                <li>Korean (KR)</li>
+                <li>KRW (&#8361;)</li>
+                <li>Become a host</li>
+                <li>Create your experience</li>
+                <li>Help</li>
+                <li>Join</li>
+                <li>Login</li>
+            </ul>
+        </nav>
+        <div class="check_information">
+            <h1>Book unique accommodations and activities.</h1>
+            <form>
+                <label>Location</label>
+                <button type="submit">Where are you going?</button>
+                <label class="check_label check_in">Check in</label>
+                <label class="check_label check_out">Check out</label>
+                <input type="date" class="check_date" required pattern="\d{4}-\d{2}-\d{2}" />
+                <input type="date" class="check_date" required pattern="\d{4}-\d{2}-\d{2}" />
+                <label>Guests</label>
+                <button type="submit">Add guests</button>
+                <button class="send_date" type="submit">Rechercher</button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <section class="explorer">
+            <h2>Explorer Airbnb</h2>
+            <div class="e_box logements">
+                <img src="./assets/logements.png" alt="logements" />
+                <h3>logements</h3>
+            </div>
+            <div class="e_box experiences">
+                <img src="./assets/experiences.png" alt="experiences" />
+                <h3>Experiences</h3>
+            </div>
+            <div class="e_box aventures">
+                <img src="./assets/aventures.png" alt="aventures" />
+                <h3>Aventures</h3>
+            </div>
+        </section>
+        <section class="airbnb_plus">
+            <h2>Hébergements Airbnb Plus</h2>
+            <span>Une sélection de logements vérifiés selon des critères de qualité et de design</span>
+            <div class="plus_house">
+                <img src="assets/pluslogo.png" alt="plus_logo" />
+                <button type="submit">Découvrir des logements</button>
+            </div>
+        </section>
+        <section class="airbnb_adventure">
+            <h2>Découvrez les aventures Airbnb</h2>
+            <span>
+                Voyages de plusieurs jours organisés par des experts locaux avec activités, repas et logements
+                compris
+            </span>
+            <div class="adventure_content">
+                <div class="cayman_islands content">
+                    <figure>
+                        <img class="picture" src="assets/cayman.png" alt="cayman_islands" />
+                        <figcaption>Cayman Islands</figcaption>
+                    </figure>
+                    <h3>2 Nights PACKAGE All Inclusive</h3>
+                    <span>À partir de 577€/personne - 3 jours</span>
+                    <div class="rank">
+                        <span>5.0 🌟</span>
+                    </div>
+                </div>
+                <div class="uruguay content">
+                    <figure>
+                        <img class="picture" src="assets/uruguay.png" alt="uruguay" />
+                        <figcaption>Uruguay</figcaption>
+                    </figure>
+                    <h3>2 Nights PACKAGE All Inclusive</h3>
+                    <span>À partir de 577€/personne - 3 jours</span>
+                    <div class="rank">
+                        <span>5.0 🌟</span>
+                    </div>
+                </div>
+                <div class="iceland content">
+                    <figure>
+                        <img class="picture" src="assets/iceland.png" alt="iceland" />
+                        <figcaption>Iceland</figcaption>
+                    </figure>
+                    <h3>2 Nights PACKAGE All Inclusive</h3>
+                    <span>À partir de 577€/personne - 3 jours</span>
+                    <div class="rank">
+                        <span>5.0 🌟</span>
+                    </div>
+                </div>
+                <div class="mongolia content">
+                    <figure>
+                        <img class="picture" src="assets/mongolia.png" alt="mongolia" />
+                        <figcaption>Mongolia</figcaption>
+                    </figure>
+                    <h3>2 Nights PACKAGE All Inclusive</h3>
+                    <span>À partir de 577€/personne - 3 jours</span>
+                    <div class="rank">
+                        <span>5.0 🌟</span>
+                    </div>
+                </div>
+                <div class="bahrain content">
+                    <figure>
+                        <img class="picture" src="assets/bahrain.png" alt="bahrain" />
+                        <figcaption>Bahrain</figcaption>
+                    </figure>
+                    <h3>2 Nights PACKAGE All Inclusive</h3>
+                    <span>À partir de 577€/personne - 3 jours</span>
+                    <div class="rank">
+                        <span>5.0 🌟</span>
+                    </div>
+                </div>
+                <div class="bosnia content">
+                    <figure>
+                        <img class="picture" src="assets/bosnia.png" alt="bosnia" />
+                        <figcaption>Bosnia and Herzegovina</figcaption>
+                    </figure>
+                    <h3>2 Nights PACKAGE All Inclusive</h3>
+                    <span>À partir de 577€/personne - 3 jours</span>
+                    <div class="rank">
+                        <span>5.0 🌟</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="world_house">
+            <h2>Logements dans le monde entie</h2>
+            <div class="unlike_house">
+                <div class="toledo house">
+                    <img src="assets/toptoledo.png" alt="Top_toledo" />
+                    <button type="submit">SUPERHOST</button>
+                    <span class="nation_name">Toledo</span>
+                    <span class="star">🌟 4.98</span>
+                    <p>À partir de 577€/personne - 3 jours</p>
+                </div>
+                <div class="mesa house">
+                    <img src="assets/mesa.png" alt="Top_mesa" />
+                    <button type="submit">SUPERHOST</button>
+                    <span class="nation_name">Mesa</span>
+                    <span class="star">🌟 4.98</span>
+                    <p>À partir de 577€/personne - 3 jours</p>
+                </div>
+                <div class="utica house">
+                    <img src="assets/utica.png" alt="Top_utica" />
+                    <button type="submit">SUPERHOST</button>
+                    <span class="nation_name">Utica</span>
+                    <span class="star">🌟 4.98</span>
+                    <p>À partir de 577€/personne - 3 jours</p>
+                </div>
+                <div class="southbend house">
+                    <img src="assets/southbend.png" alt="Top_southbend" />
+                    <button type="submit">SUPERHOST</button>
+                    <span class="nation_name">South Bend</span>
+                    <span class="another_star">🌟 4.98</span>
+                    <p>À partir de 577€/personne - 3 jours</p>
+                </div>
+                <div class="b_toled house">
+                    <img src="assets/bottomtoledo.png" alt="Bottom_toled" />
+                    <button type="submit">SUPERHOST</button>
+                    <span class="nation_name">Toledo</span>
+                    <span class="star">🌟 4.98</span>
+                    <p>À partir de 577€/personne - 3 jours</p>
+                </div>
+                <div class="b_mesa house">
+                    <img src="assets/bottommesa.png" alt="Bottom_mesa" />
+                    <button type="submit">SUPERHOST</button>
+                    <span class="nation_name">Mesa</span>
+                    <span class="star">🌟 4.98</span>
+                    <p>À partir de 577€/personne - 3 jours</p>
+                </div>
+                <div class="b_utica house">
+                    <img src="assets/bottomutica.png" alt="Bottom_utica" />
+                    <button type="submit">SUPERHOST</button>
+                    <span class="nation_name">Utica</span>
+                    <span class="star">🌟 4.98</span>
+                    <p>À partir de 577€/personne - 3 jours</p>
+                </div>
+                <div class="b_southbend house">
+                    <img src="assets/bottomsouthbend.png" alt="Bottom_southbend" />
+                    <button type="submit">SUPERHOST</button>
+                    <span class="nation_name">South Bend</span>
+                    <span class="another_star">🌟 4.98</span>
+                    <p>À partir de 577€/personne - 3 jours</p>
+                </div>
+
+            </div>
+        </section>
+        <section class="topRated_houses">
+            <h2>Expériences très bien notées</h2>
+            <span>
+                Voyages de plusieurs jours organisés par des experts locaux avec activités, repas et logements
+                compris
+            </span>
+            <div class="topRated_house">
+                <div class="cayman_islands topMark">
+                    <figure>
+                        <img class="picture" src="assets/toprated_cayman.png" alt="cayman_islands" />
+                        <figcaption>Cayman Islands</figcaption>
+                    </figure>
+                    <h3>2 Nights PACKAGE All Inclusive</h3>
+                    <span>À partir de 577€/personne - 3 jours</span>
+                    <div class="rank">
+                        <span>5.0 🌟</span>
+                    </div>
+                </div>
+                <div class="uruguay topMark">
+                    <figure>
+                        <img class="picture" src="assets/toprated_uruguay.png" alt="uruguay" />
+                        <figcaption>Uruguay</figcaption>
+                    </figure>
+                    <h3>2 Nights PACKAGE All Inclusive</h3>
+                    <span>À partir de 577€/personne - 3 jours</span>
+                    <div class="rank">
+                        <span>5.0 🌟</span>
+                    </div>
+                </div>
+                <div class="iceland topMark">
+                    <figure>
+                        <img class="picture" src="assets/toprated_iceland.png" alt="iceland" />
+                        <figcaption>Iceland</figcaption>
+                    </figure>
+                    <h3>2 Nights PACKAGE All Inclusive</h3>
+                    <span>À partir de 577€/personne - 3 jours</span>
+                    <div class="rank">
+                        <span>5.0 🌟</span>
+                    </div>
+                </div>
+                <div class="mongolia topMark">
+                    <figure>
+                        <img class="picture" src="assets/toprated_mongolia.png" alt="mongolia" />
+                        <figcaption>Mongolia</figcaption>
+                    </figure>
+                    <h3>2 Nights PACKAGE All Inclusive</h3>
+                    <span>À partir de 577€/personne - 3 jours</span>
+                    <div class="rank">
+                        <span>5.0 🌟</span>
+                    </div>
+                </div>
+                <div class="bahrain topMark">
+                    <figure>
+                        <img class="picture" src="assets/toprated_bahrain.png" alt="bahrain" />
+                        <figcaption>Bahrain</figcaption>
+                    </figure>
+                    <h3>2 Nights PACKAGE All Inclusive</h3>
+                    <span>À partir de 577€/personne - 3 jours</span>
+                    <div class="rank">
+                        <span>5.0 🌟</span>
+                    </div>
+                </div>
+                <div class="bosnia topMark">
+                    <figure>
+                        <img class="picture" src="assets/toprated_bosnia.png" alt="bosnia" />
+                        <figcaption>Bosnia and Herzegovina</figcaption>
+                    </figure>
+                    <h3>2 Nights PACKAGE All Inclusive</h3>
+                    <span>À partir de 577€/personne - 3 jours</span>
+                    <div class="rank">
+                        <span>5.0 🌟</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="recommendation">
+            <h2>Destinations Airbnb Plus à la Une</h2>
+            <span>
+                Voyages de plusieurs jours organisés par des experts locaux avec activités, repas et logements
+                compris
+            </span>
+            <div class="recommend">
+                <div class="house_rmd">
+                    <div class="house_bgImg">
+                        <div class="bgImg_overray"></div>
+                        <img src="assets/recomd_logo.png" alt="recomd_logo" />
+                    </div>
+                    <span>
+                        Plus de 200 séjours vérifiés
+                    </span>
+                    <p>À partir de 577€/personne - 3 jours</p>
+                </div>
+                <div class="house_rmd">
+                    <div class="house_bgImg another1">
+                        <div class="bgImg_overray"></div>
+                        <img src="assets/recomd_logo.png" alt="recomd_logo" />
+                    </div>
+                    <span>
+                        Plus de 200 séjours vérifiés
+                    </span>
+                    <p>À partir de 577€/personne - 3 jours</p>
+                </div>
+                <div class="house_rmd">
+                    <div class="house_bgImg another2">
+                        <div class="bgImg_overray"></div>
+                        <img src="assets/recomd_logo.png" alt="recomd_logo" />
+                    </div>
+                    <span>
+                        Plus de 200 séjours vérifiés
+                    </span>
+                    <p>À partir de 577€/personne - 3 jours</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="support">
+            <ul class="about">
+                <li class="sub_title">ABOUT</li>
+                <li>
+                    <a href="">How Airbnb works</a>
+                </li>
+                <li>
+                    <a href="">Newsroom</a>
+                </li>
+                <li>
+                    <a href="">Airbnb 2021</a>
+                </li>
+                <li>
+                    <a href="">Investors</a>
+                </li>
+                <li>
+                    <a href="">Airbnb Plus</a>
+                </li>
+                <li>
+                    <a href="">Airbnb Luxe</a>
+                </li>
+                <li>
+                    <a href="">HotelTonight</a>
+                </li>
+                <li>
+                    <a href="">Airbnb for Work</a>
+                </li>
+                <li>
+                    <a href="">Made possible by Hosts</a>
+                </li>
+                <li>
+                    <a href="">Careers</a>
+                </li>
+                <li>
+                    <a href="">Founders'Letter</a>
+                </li>
+            </ul>
+            <ul class="community">
+                <li class="sub_title">COMMUNITY</li>
+                <li>
+                    <a href="">Diversity & Belonging</a>
+                </li>
+                <li>
+                    <a href="">Against Discrimination</a>
+                </li>
+                <li>
+                    <a href="">Accessibility</a>
+                </li>
+                <li>
+                    <a href="">Airbnb Associates</a>
+                </li>
+                <li>
+                    <a href="">Frontline Stays</a>
+                </li>
+                <li>
+                    <a href="">Guest Referrals</a>
+                </li>
+                <li>
+                    <a href="">Gift cards</a>
+                </li>
+                <li>
+                    <a href="">Airbnb.org</a>
+                </li>
+            </ul>
+            <ul class="sub_host">
+                <li class="sub_title">HOST</li>
+                <li>
+                    <a href="">Host your home</a>
+                </li>
+                <li>
+                    <a href="">Host an Online Experience</a>
+                </li>
+                <li>
+                    <a href="">Host an Experience</a>
+                </li>
+                <li>
+                    <a href="">Responsible hosting</a>
+                </li>
+                <li>
+                    <a href="">Resource Center</a>
+                </li>
+                <li>
+                    <a href="">Community Center</a>
+                </li>
+            </ul>
+            <ul class="sub_support">
+                <li class="sub_title">SUPPORT</li>
+                <li>
+                    <a href="">Our COVID-19 Response</a>
+                </li>
+                <li>
+                    <a href="">Help Center</a>
+                </li>
+                <li>
+                    <a href="">Cancellation options</a>
+                </li>
+                <li>
+                    <a href="">Neighborhood Support</a>
+                </li>
+                <li>
+                    <a href="">Trust & Safety</a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+</body>
+
+</html>
