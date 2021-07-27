@@ -1,0 +1,192 @@
+.nav_underbar{
+    width: 100%;
+    height: 80px;
+    box-shadow: rgba(0 0 0 / 8%) 0px 1px 12px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+/* nav와 nav ui 영역 */
+.top_nav {
+    width: 63.4%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+/* 로고 색깔 */
+.logobox {
+    color: rgb(255, 56, 92);
+}
+
+.user{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+}
+
+/* 호스트 되기, 언어 선택 부분 */
+.user > li > a{
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    font-weight: 600;
+}
+
+.user .become_host,
+.user .choice_language{
+    width: 96px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.user .become_host:hover,
+.user .choice_language:hover{
+    background-color: rgba(128, 128, 128, 0.05);
+}
+
+.user .choice_language {
+    width: 46px;
+    line-height: 45px;
+    margin-right: 10px;
+}
+
+/* 유저 로그인, 회원가입, 햄버거 버튼 */
+.user_login {
+    all: unset;
+    width: 77px;
+    height: 42px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.user_login .login_svg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(128, 128, 128, 0.15);
+    border-radius: 20px;
+}
+
+.user_login:hover{
+    box-shadow: 2px 4px rgb(0 0 0 / 18%);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.login_svg > svg {
+    display: inline-block;
+    margin-left: 5px;
+    color: rgba(128, 128, 128, 0.9);
+}
+
+.login_svg > svg:first-child {
+    color: rgba(10, 10, 10, 0.9);
+    margin-right: 5px;
+}
+
+/* header 메인 타이틀 부분 */
+
+.header_menu {
+    width: 100%;
+    height: 961px;
+    background-image: url("https://a0.muscache.com/im/pictures/f13f758e-0629-4cb2-b728-3e2f0dc3772b.jpg");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.header_menu .header_title{
+    width: 63.4%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header_title > h1{
+    font-size: 52px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.header_title > span {
+    max-width: 360px;
+    word-break: keep-all;
+    line-height: 1.5em;
+}
+
+/* Menu Nav 영역 */
+
+.menu_nav {
+    width: 63.4%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.menu {
+    display: flex;
+    border-right: 1px solid rgba(128, 128, 128, 0.9);
+}
+
+.contents {
+    display: flex;
+    justify-content: flex-start;
+    overflow:initial;
+    margin-left: 10px;
+    position: relative;
+}
+.menu > li:hover > button {
+    border: 1px solid black;
+}
+
+/* .contents::after {
+    content: '▶';
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.9);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right:30.2%;
+    transform: translateY(-50%);
+    text-align: center;
+    line-height: 25px;
+    background-color: white;
+    box-shadow: rgba(255, 255, 255, 0.4) 30px 200px 90px;
+} */
+
+.menu > li > button,
+.contents > li > button {
+    all: unset;
+    height: 36px;
+    border: 1px solid rgba(128, 128, 128, 0.6);
+    font-size: 14px;
+    margin-right: 10px;
+    border-radius: 20px;
+    padding: 0 15px;
+    white-space: nowrap;
+}
+
+.contents > li > button{
+    background-color: rgba(128, 128, 128, 0.1);
+    border: 0;
+}
+
+.menu_filter {
+    display: flex;
+    align-items: center;
+}
+
+.menu_filter > span {
+    padding-left: 8px;
+}
+

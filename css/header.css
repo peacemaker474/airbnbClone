@@ -28,6 +28,10 @@ header{
     color: white;
 }
 
+.menu_content > li > a{
+    color:white;
+}
+
 .check_information{
     width: 399px;
     height: 516px;

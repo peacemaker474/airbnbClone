@@ -1,0 +1,129 @@
+.olympic_mood{
+    width: 63.4%;
+    height: 550px;
+    margin: 0 auto;
+}
+
+/* 올림픽 분위기 내용물 */
+.nations{
+    width: 100%;
+    height: 486px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nation{
+    width: 254px;
+    height: 418px;
+    margin-right: 15px;
+}
+
+.nation:last-child{
+    margin-right: 0;
+}
+
+.nation_image{
+    width: 100%;
+    height: 338px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-size: cover;
+}
+.nation_image:hover{
+    transition: background-image 0.8s;
+    background-size: cover;
+}
+
+.likes_btn {
+    all: unset;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin: 5px;
+}
+
+.soldout_btn {
+    all: unset;
+    text-align: center;
+    width: 40px;
+    height: 25px;
+    background-color: white;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/* 국가, 가격 정보 */
+
+.nation_information > h3{
+    font-size: 14px;
+    color:rgba(128, 128, 128, 0.8);
+    margin: 10px 0;
+}
+
+.nation_information > p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.3em;
+}
+
+.nation_information > span{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* 분위기별 사진 */
+
+.larry{
+    background-image: url('../assets/usa.jpeg');
+}
+
+.larry:hover{
+    background-image: url('../assets/usahover.jpeg');
+}
+
+.gleadle {
+    background-image: url('../assets/canada.jpeg');
+    background-position: 50% 50%;
+}
+
+.gleadle:hover {
+    background-image: url('../assets/canadahover.jpeg');
+}
+
+.peacock {
+    background-image: url('../assets/england.jpeg');
+    background-position: 50% 50%;
+}
+
+.peacock:hover{
+    background-image: url('../assets/englandhover.jpg');
+}
+
+.patrick{
+    background-image: url('../assets/usabasketball.jpeg');
+}
+
+.patrick:hover{
+    background-image: url('../assets/usabasketballhover.jpeg');
+    background-position: 50% 50%;
+}
+
+.amelia{
+    background-image: url('../assets/usasuper.jpg');
+}
+
+.amelia:hover{
+    background-image: url('../assets/usasuperhover.jpeg');
+}
+
+.honnold {
+    background-image: url('../assets/usaclimbing.jpeg');
+}
+
+.honnold:hover {
+    background-image: url('../assets/usaclimbinghover.jpeg');
+    background-position: 50% 50%;
+}
