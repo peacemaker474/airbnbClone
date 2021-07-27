@@ -1,0 +1,41 @@
+.enjoy_weekend{
+    width: 63.4%;
+    height: 550px;
+    margin: 0 auto;
+}
+
+.tokyo{
+    background-image: url('../assets/tokyo.jpeg');
+}
+
+.tokyo:hover{
+    background-image: url('../assets/tokyohover.jpeg');
+}
+
+.kpop{
+    background-image: url('../assets/kpop.jpeg');
+}
+
+.kpop:hover{
+    background-image: url('../assets/kpophover.jpeg');
+}
+
+.like_animal{
+    background-image: url('../assets/likeanimal.jpeg');
+}
+
+.like_animal:hover{
+    background-image: url('../assets/likeanimalhover.jpeg');
+}
+
+.taco{
+    background-image: url('../assets/taco.jpg');
+}
+
+.krhistory{
+    background-image: url('../assets/krhistory.jpeg');
+}
+
+.coffee{
+    background-image: url('../assets/coffee.jpg');
+}
