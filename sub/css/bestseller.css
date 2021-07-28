@@ -47,3 +47,8 @@
 .neiswender:hover{
     background-image: url('../assets/neiswenderhover.jpg');
 }
+
+.bestseller {
+    width: 88.9%;
+    height: 474px;
+}

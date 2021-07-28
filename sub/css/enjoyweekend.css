@@ -39,3 +39,10 @@
 .coffee{
     background-image: url('../assets/coffee.jpg');
 }
+
+@media screen and (max-width: 1440px) {
+    .enjoy_weekend {
+        width: 88.9%;
+        height: 524px;
+    }
+}

@@ -76,3 +76,14 @@
     background-image: url(../assets/onlineex.jpg);
     background-size: cover;
 }
+
+@media screen and (max-width:1440px) {
+    .week_news {
+        width: 88.9%;
+    }
+    .week_news .content_title > h2{
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+}

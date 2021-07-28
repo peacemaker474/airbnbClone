@@ -190,3 +190,19 @@
     padding-left: 8px;
 }
 
+@media screen and (max-width: 1440px) {
+    .top_nav{
+        width: 88.9%;
+    }
+    .header_menu{
+        height: 540px;
+    }
+    .header_menu .header_title{
+        width: 88.9%;
+        height: 540px;
+    }
+    .menu_nav{
+        width: 88.9%;
+    }
+}
+

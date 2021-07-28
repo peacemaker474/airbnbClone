@@ -61,3 +61,9 @@ footer{
 .content_clickbtn > button:last-child{
     margin-right: 0;
 }
+
+@media screen and (max-width: 1440px) {
+    header{
+        height: 684px;
+    }
+}

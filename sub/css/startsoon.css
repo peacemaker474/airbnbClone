@@ -92,3 +92,18 @@
 .china_img:hover{
     background-image:url('../assets/chinahover.jpeg');
 }
+
+@media screen and (max-width:1440px) {
+    .startgame_soon{
+        width: 88.9%;
+    }
+    .olympic_soon {
+        height: 180px;
+    }
+    .start_timebtn .start_time {
+        width: 72px;
+        height: 32px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}

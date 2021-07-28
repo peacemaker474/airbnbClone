@@ -130,3 +130,17 @@
     background-image: url('../assets/usaclimbinghover.jpeg');
     background-position: 50% 50%;
 }
+
+@media screen and (max-width:1440px) {
+    .olympic_mood {
+        width: 88.9%;
+        height: 494px;
+    }
+    
+    .nations {
+        height: 444px;
+    }
+    .nation_image{
+        height: 264px;
+    }
+}

@@ -53,6 +53,11 @@
     align-items: center;
 }
 
+.sns_link > li > a > svg{
+    width: 20px;
+    height: 20px;
+}
+
 .price_language{
     display: flex;
     justify-content: space-between;
@@ -80,4 +85,29 @@
 .instagram,
 .navercafe{
     margin-right: 20px;
+}
+
+@media screen and (max-width: 1440px) {
+    .support {
+        width: 88.9%;
+    }
+    
+    .etc_menu > li > a {
+        font-size: 14px;
+        color:#484848;
+    }
+
+    .price_language{
+        margin-right: 70px;
+    }
+
+    .lanugage > a,
+    .price > span{
+        font-size: 14.5px;
+    }
+
+    .sns_link > li > a > svg{
+        width: 16px;
+        height: 16px;
+    }
 }
