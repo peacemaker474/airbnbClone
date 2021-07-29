@@ -90,6 +90,10 @@
     margin-right: 5px;
 }
 
+.login_position {
+    position: relative;
+}
+
 /* header 메인 타이틀 부분 */
 
 .header_menu {

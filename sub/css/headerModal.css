@@ -1,0 +1,192 @@
+.login_modal {
+    width: 240px;
+    height: 237px;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 12%) 0px 2px 16px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -605%;
+    left: -210%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.login_modal > a{
+    font-size: 14px;
+    color:black;
+    text-decoration: none;
+    padding-left: 15px;
+    height: 42px;
+    line-height: 42px;
+}
+
+.login_modal > a:hover{
+    background-color:rgba(128, 128, 128, 0.05);
+}
+
+.login_modal > a:first-child {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.login_line {
+    width: 100%;
+    border-top:1px solid rgba(128, 128, 128, 0.3);
+    margin: 5px 0;
+}
+
+.show_login {
+    display: none;
+}
+
+/* 언어 설정 및 통화 모달 */
+
+.language_overray{
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.35);
+    z-index: 1999;
+}
+
+.language_modal{
+    width: 1032px;
+    height: 939px;
+    background-color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2000;
+    overflow-y: scroll;
+    border-radius: 15px;
+}
+
+.cancle_btn {
+    all: unset;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    font-size: 16px;
+    text-align: center;
+    line-height: 27.5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.cancle_btn:hover{
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+.language_price{
+    width: 95%;
+    margin: 80px auto 20px auto;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.language_price > button {
+    all: unset;
+    height: 38px;
+    font-size: 14px;
+    padding: 0 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.language_price > button::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: 12%;
+    width: 80%;
+    height: 1px;
+    border-top: 3px solid black;
+
+}
+
+.language_price > button:hover{
+    background-color: rgba(128, 128, 128, 0.07);
+}
+
+.recommend_location,
+.choice_location {
+    width: 95%;
+    height: 147px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.recommend_location > h2,
+.choice_location > h2{
+    font-size: 22px;
+    font-weight: bold;
+    color: #484848;
+}
+
+.contries {
+    display: grid;
+    grid-template-columns: 176px 176px 176px 176px 176px;
+    grid-template-rows: 72px;
+    grid-gap: 15px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.contries > li {
+    width: 176px;
+    height: 52px;
+    margin-left: 3px;
+    border-radius: 10px;
+}
+
+.contries > li:hover {
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+.contries > li > a {
+    width: 176px;
+    height: 52px;
+    font-size: 14px;
+    color:#484848;
+    text-decoration: none;
+}
+
+.contries > li > a > div {
+    display: inline-block;
+    width: 100%;
+    margin-left: 15px;
+    padding-top: 5px;
+}
+
+.contries > li > a > div:first-child {
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.chocie {
+    grid-template-rows: 80px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px;
+    margin-top: 15px;
+}
+
+.chocie > li {
+    height: 64px;
+}
+
+.chocie > li > a > div:first-child{
+    padding-top: 15px;
+    font-weight: 400;
+}
+
+.modal_language {
+    display: none;
+}

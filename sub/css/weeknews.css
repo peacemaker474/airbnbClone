@@ -2,6 +2,7 @@
     width: 63.4%;
     height: 420px;
     margin: 0 auto;
+    position: relative;
 }
 
 .week_news .content_title > h2{
@@ -9,12 +10,15 @@
     font-weight: 600;
 }
 
+
 .news_lists{
     display: grid;
     grid-template-columns: repeat(4, 590px);
     grid-template-rows: 330px;
     grid-gap: 15px;
     margin: 20px 0;
+    position: absolute;
+    width: 100%;
 }
 
 .news_list{
