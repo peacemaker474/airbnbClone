@@ -1,101 +1,288 @@
 /* header 영역 */
 header{
     width: 100%;
-    height: 750px;
-    background-image: url('../assets/header_main.png');
+    height: 1121px;
+    background-image: url("../assets/main.jpg");
     background-size: cover;
+    position: relative;
 }
 /* nav 영역 */
-.menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 24px 0 23px;
+.nav_underbar{
+    width: 100%;
+    height: 80px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
-.logo{
-    width:28.7px;
-    height: 30.8px;
+/* nav와 nav ui 영역 */
+.top_nav {
+    width: 63.4%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+}
+/* 로고 색깔 */
+.logobox {
+    width: 45%;
+    color: rgb(255, 255, 255);
 }
 
-.menu_content {
+.user{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 45%;
+    height: 80px;
+}
+
+/* 호스트 되기, 언어 선택 부분 */
+.user > li > a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.user .become_host,
+.user .choice_language{
+    width: 96px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.user .become_host:hover,
+.user .choice_language:hover{
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.user .choice_language {
+    width: 46px;
+    line-height: 45px;
+    margin-right: 10px;
+}
+
+.etc_menu {
+    width: 348px;
+    height: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.etc_title {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 14px;
-    width: 687px;
-    height: 100%;
-    font-weight: 600;
-    color: white;
 }
 
-.menu_content > li > a{
+.etc_title > li > a {
     color:white;
+    text-decoration: none;
+    padding: 20px;
 }
 
-.check_information{
-    width: 399px;
-    height: 516px;
+.etc_content{
+    width: 850px;
+    height: 66px;
     background-color: white;
-    margin: 84px 0 0 80px;
+    position: absolute;
+    bottom: -150%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.etc_content .etc_line {
+    width: 1px;
+    height: 30px;
+    border-left: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 0%;
+}
+
+.etc_content > div {
+    height: 100%;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
 }
 
-.check_information > h1 {
-    width: 343px;
-    height: 114px;
-    margin: 32px 24px 0 24px;
-    font-size: 32px;
-    font-weight: 500;
+.etc_content > div > *:first-child{
+    padding: 15px 0 0 30px;
+}
+.etc_content > div > *:last-child{
+    padding: 5px 0 0 30px;
 }
 
-.check_information > form {
+.etc_content .location,
+.etc_content .people {
+    width: 30%;
+    
+}
+
+.etc_content .check_in,
+.etc_content .check_out {
+    width: 20%;
+}
+
+
+.location > input,
+.check_out > input,
+.check_in > input{
+    all:unset;
+    width: 80%;
+}
+
+.people > button{
+    all:unset;
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    width: 85%;
-    margin: 0 26px;
-    font-size: 12px;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.people > button > p {
+    width: 50%;
+    height: 40%;
+    display: inline-block;
+}
+
+.people > button > p:last-child {
+    padding-top: 0;
+}
+
+.search {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    background-color: #E61E4D;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 56px;
+    color: white;
+}
+
+
+/* 유저 로그인, 회원가입, 햄버거 버튼 */
+.user_login {
+    all: unset;
+    width: 77px;
+    height: 42px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: white;
+}
+.user_login .login_svg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(128, 128, 128, 0.15);
+    border-radius: 20px;
+}
+
+.user_login:hover{
+    box-shadow: 2px 4px rgb(0 0 0 / 18%);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.login_svg > svg {
+    display: inline-block;
+    margin-left: 5px;
+    color: rgba(128, 128, 128, 0.9);
+}
+
+.login_svg > svg:first-child {
+    color: rgba(10, 10, 10, 0.9);
+    margin-right: 5px;
+}
+
+.login_position {
+    position: relative;
+}
+
+.header_title {
+    width: 63.4%;
+    height: 50%;
+    margin: 0 auto;
+    padding: 370px 0;
+    box-sizing: border-box;
+}
+
+.header_title > h1{
+    width: 500px;
+    height: 280px;
+    font-size: 68px;
+    color:white;
+    font-weight: bold;
+    word-break: keep-all;
+}
+
+.header_title > button {
+    all:unset;
+    width: 120px;
+    height: 34px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
     font-weight: bold;
 }
 
-.check_information > form > input,
-.check_information > form > button {
-    all: unset;
+.search_start {
+    width: 300px;
     height: 48px;
-    border: 1px solid rgba(10, 10, 10, 0.2);
-    color: rgba(10, 10, 10, 0.4);
-    padding-left: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 8%), 0px 4px 12px rgb(0 0 0 / 5%);
 }
 
-.check_information .check_date{
-    width: 44.9%;
-    line-height: 45px;
-}
-.check_information .check_label{
-    width: 45%;
-}
-
-.check_information .check_out{
-    margin-left: 18px;
-}
-.check_information > form > label {
-    width: 100%;
-    margin: 10px 0;
-}
-
-.check_information > form > button {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.check_information .send_date{
-    width: 146px;
-    height: 48px;
-    font-size: 16px;
-    border-radius: 4px;
-    padding: 0;
-    background-color: #ff5a5f;
-    color: white;
+.start{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 15%;
+    right: 3%;
+    background-color: #E61E4D;
+    border-radius: 50%;
     text-align: center;
-    margin: 12px 0 24px 221px;
+    line-height: 36px;
+    color: white;
+}
+
+.search_start > button {
+    all: unset;
+    width: 100%;
+    height: 100%;
+}
+.search_start > button > p {
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.scroll_search {
+    display: none;
+}
+
+.etc_modal {
+    display: none;
 }
