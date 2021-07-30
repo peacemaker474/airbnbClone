@@ -17,7 +17,7 @@
     margin: 0 auto;
 }
 /* 로고 색깔 */
-.logobox {
+.logobox > a {
     color: rgb(255, 56, 92);
 }
 
@@ -125,7 +125,18 @@
     line-height: 1.5em;
 }
 
-/* Menu Nav 영역 */
+/* Main Nav 영역 */
+
+.main_nav {
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    top: 0%;
+    z-index: 9999;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    background-color: white;
+}
 
 .menu_nav {
     width: 63.4%;
@@ -133,7 +144,10 @@
     display: flex;
     align-items: center;
     margin: 0 auto;
-    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .menu {
@@ -144,29 +158,14 @@
 .contents {
     display: flex;
     justify-content: flex-start;
-    overflow:initial;
+    overflow:hidden;
     margin-left: 10px;
     position: relative;
+
 }
 .menu > li:hover > button {
     border: 1px solid black;
 }
-
-/* .contents::after {
-    content: '▶';
-    width: 30px;
-    height: 30px;
-    border: 1px solid rgba(128, 128, 128, 0.9);
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    right:30.2%;
-    transform: translateY(-50%);
-    text-align: center;
-    line-height: 25px;
-    background-color: white;
-    box-shadow: rgba(255, 255, 255, 0.4) 30px 200px 90px;
-} */
 
 .menu > li > button,
 .contents > li > button {
