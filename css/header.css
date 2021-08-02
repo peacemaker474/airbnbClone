@@ -408,6 +408,11 @@ header{
     cursor: pointer;
 }
 
+.plus_minus .minus {
+    cursor: not-allowed;
+    opacity: 0.3;
+}
+
 .plus_minus > span {
     font-size: 16px;
     margin: 0 15px;
