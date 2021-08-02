@@ -119,7 +119,7 @@ header{
 .etc_content > div > *:first-child{
     padding: 15px 0 0 30px;
 }
-.etc_content > div > *:last-child{
+.etc_content > div:last-child > *:last-child{
     padding: 5px 0 0 30px;
 }
 
@@ -140,6 +140,13 @@ header{
 .check_in > input{
     all:unset;
     width: 80%;
+    margin: 5px 0 0 30px;
+    font-size: 14px;
+}
+
+.location,
+.people {
+    position: relative;
 }
 
 .people > button{
@@ -148,7 +155,6 @@ header{
     display: flex;
     flex-direction: column;
     height: 100%;
-    margin-top: 10px;
 }
 
 .people > button > p {
@@ -165,7 +171,7 @@ header{
     width: 48px;
     height: 48px;
     position: absolute;
-    top: 0%;
+    top: 12.5%;
     right: 5%;
     background-color: #E61E4D;
     border-radius: 50%;
@@ -284,5 +290,129 @@ header{
 }
 
 .etc_modal {
+    display: none;
+}
+
+.location_search{
+    width: 500px;
+    height: 160px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 120%;
+}
+
+.location_search > h3 {
+    width: 85%;
+    margin: 40px auto 20px auto;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.location_search > button {
+    all: unset;
+    width: 85%;
+    height: 35%;
+    margin: 0 auto;
+    box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location_search > button > span {
+    color:rgb(111, 1, 156);
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 25px;
+}
+
+.location_search > button > video {
+    margin-right: 20px;
+}
+
+.location_modal {
+    display: none;
+}
+
+.add_people {
+    width: 395px;
+    height: 245px;
+    background-color: white;
+    position: absolute;
+    top: 120%;
+    left: -70%;
+    border-radius: 35px;
+    padding: 0 !important;
+}
+
+.add_people > div {
+    width: 85%;
+    height: 27.5%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.add_people > div:last-child {
+    border-bottom: none;
+}
+
+.add_people > div:first-child{
+    margin-top: 25px;
+}
+
+.add_people > div > div {
+    margin-bottom: 20px;
+    padding: 0 5px;
+}
+
+.adults > h4,
+.kids > h4,
+.child > h4{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.adults > span,
+.kids > span,
+.child >span{
+    font-size: 14px;
+    color: #484848;
+}
+
+.plus_minus {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.plus_minus > button {
+    all:unset;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid rgba(128, 128, 128, 0.6);
+    text-align: center;
+}
+
+.plus_minus > span {
+    font-size: 16px;
+    margin: 0 15px;
+}
+
+.plus_minus > button > svg {
+    margin: 0 auto;
+    color:rgba(128, 128, 128, 0.9);
+}
+
+.add_modal {
     display: none;
 }

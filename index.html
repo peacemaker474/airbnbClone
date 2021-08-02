@@ -5,9 +5,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="node_modules/hotel-datepicker/dist/css/hotel-datepicker.css" />
     <link rel="shortcut icon"
         href="https://a0.muscache.com/airbnb/static/icons/android-icon-192x192-c0465f9f0380893768972a31a614b670.png" />
     <script defer src="js/scroll.js"></script>
+    <script defer src="node_modules/fecha/dist/fecha.min.js"></script>
+    <script defer src="node_modules/hotel-datepicker/dist/js/hotel-datepicker.min.js"></script>
+    <script defer src="js/calendar.js"></script>
+    <script defer src="js/modal.js"></script>
     <title>에어비앤비: 휴가용 임대 숙소, 통나무집, 비치 하우스, 독특한 숙소 및 체험</title>
 
 </head>
@@ -44,16 +49,29 @@
                         <div class="location">
                             <label>위치</label>
                             <input type="text" placeholder="어디로 여행가세요?" />
+                            <section class="location_search location_modal">
+                                <h3>언제 어디로든 떠나는 여행</h3>
+                                <button type="submit">
+                                    <span>유연한 검색</span>
+                                    <video autoplay="" crossorigin="anonymous" playsinline=""
+                                        poster="https://a0.muscache.com/pictures/04c0a34f-9880-48b7-a69c-49011f602a35.jpg"
+                                        preload="auto" width="28" height="28">
+                                        <source
+                                            src="https://a0.muscache.com/v/3d/fc/3dfc1c47-7bfb-5a3b-a969-ed42ae03c901/3dfc1c477bfb5a3ba969ed42ae03c901_200k_1.mp4?impolicy=low_quality"
+                                            type="video/mp4">
+                                    </video>
+                                </button>
+                            </section>
                         </div>
                         <div class="etc_line"></div>
                         <div class="check_in">
                             <label>체크인</label>
-                            <input type="date" />
+                            <input id="input-id" type="text" placeholder="날짜 입력" />
                         </div>
                         <div class="etc_line"></div>
                         <div class="check_out">
                             <label>체크아웃</label>
-                            <input type="date" />
+                            <input id="input-id" type="text" placeholder="날짜 입력" />
                         </div>
                         <div class="etc_line"></div>
                         <div class="people">
@@ -72,6 +90,74 @@
                                     </svg>
                                 </div>
                             </button>
+                            <section class="add_people add_modal">
+                                <div>
+                                    <div class="adults">
+                                        <h4>성인</h4>
+                                        <span>만 13세 이상</span>
+                                    </div>
+                                    <div class="plus_minus">
+                                        <button class="minus"><svg viewBox="0 0 32 32"
+                                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                                role="presentation" focusable="false"
+                                                style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
+                                                <path d="m2 16h28"></path>
+                                            </svg></button>
+                                        <span> 0 </span>
+                                        <button class="plus">
+                                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                                                aria-hidden="true" role="presentation" focusable="false"
+                                                style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
+                                                <path d="m2 16h28m-14-14v28"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="kids">
+                                        <h4>어린이</h4>
+                                        <span>만 2~12세</span>
+                                    </div>
+                                    <div class="plus_minus">
+                                        <button class="minus"><svg viewBox="0 0 32 32"
+                                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                                role="presentation" focusable="false"
+                                                style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
+                                                <path d="m2 16h28"></path>
+                                            </svg></button>
+                                        <span> 0 </span>
+                                        <button class="plus">
+                                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                                                aria-hidden="true" role="presentation" focusable="false"
+                                                style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
+                                                <path d="m2 16h28m-14-14v28"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="child">
+                                        <h4>유아</h4>
+                                        <span>만 2세 미만</span>
+                                    </div>
+                                    <div class="plus_minus">
+                                        <button class="minus"><svg viewBox="0 0 32 32"
+                                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                                role="presentation" focusable="false"
+                                                style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
+                                                <path d="m2 16h28"></path>
+                                            </svg></button>
+                                        <span> 0 </span>
+                                        <button class="plus">
+                                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                                                aria-hidden="true" role="presentation" focusable="false"
+                                                style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
+                                                <path d="m2 16h28m-14-14v28"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                     </form>
                 </div>
