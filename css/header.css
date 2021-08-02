@@ -394,23 +394,32 @@ header{
     align-items: center;
 }
 
-.plus_minus > button {
+.plus_minus .minus,
+.plus_minus .plus {
     all:unset;
     width: 32px;
     height: 32px;
     border-radius: 50%;
     border: 1px solid rgba(128, 128, 128, 0.6);
     text-align: center;
+    position: relative;
+    z-index: 20;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .plus_minus > span {
     font-size: 16px;
     margin: 0 15px;
+    width: 10px;
 }
 
 .plus_minus > button > svg {
-    margin: 0 auto;
     color:rgba(128, 128, 128, 0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .add_modal {
