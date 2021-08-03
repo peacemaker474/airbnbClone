@@ -57,6 +57,7 @@ footer{
     border-radius: 50%;
     text-align: center;
     margin-right: 5px;
+    cursor: pointer;
 }
 .content_clickbtn > button:last-child{
     margin-right: 0;
