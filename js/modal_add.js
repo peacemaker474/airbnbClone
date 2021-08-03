@@ -9,11 +9,14 @@ const minusBtn = document.querySelectorAll(".minus");
 const plusBtn = document.querySelectorAll(".plus");
 
 const adultsC = document.querySelector(".adults_c");
-console.log(adultsC);
+const childC = document.querySelector(".child_c");
+const kidsC = document.querySelector(".kids_c");
+
 const guest = document.querySelector(".c_guest");
 
-let totalCount = 0; // 게스트 확인
 let childCount = 0; // 유아 확인
+let kidsCount = 0; // 어린이 확인
+let totalCount = 0 // 게스트 확인
 
 // 버튼 변경
 
@@ -34,9 +37,11 @@ const changeButton = (span) => {
 
 const handleCalculateGuest = () => {
     if (childCount > 0 && totalCount > 0) {
-        guest.textContent = `게스트 ${totalCount}명 유아 ${childCount}명`;
+        guest.textContent = `게스트 ${totalCount + kidsCount}명 유아 ${childCount}명`;
+        adultsC.textContent = totalCount;
     } else {
-        guest.textContent = `게스트 ${totalCount}명`;
+        guest.textContent = `게스트 ${totalCount + kidsCount}명`;
+        adultsC.textContent = totalCount;
     }
 }
 
@@ -45,19 +50,38 @@ const handleCalculateGuest = () => {
 const handlePlusPeople = (event) => {
     event.preventDefault();
     const searchParent = event.path.filter(item => item.className === "plus_minus");
-    const checkChild = searchParent[0].previousElementSibling.className;
+    const checkType = searchParent[0].previousElementSibling.className;
     const searchSpan = Array.from(searchParent[0].children).filter(item => item.classList[0] === "count");
-    if (checkChild === "child") {
-        searchSpan[0].textContent = parseInt(searchSpan[0].textContent) + 1;
-        totalCount += 1;
-        childCount += 1;
-        changeButton(searchSpan);
-        handleCalculateGuest();
-    } else if (checkChild === "kids") {
-        searchSpan[0].textContent = parseInt(searchSpan[0].textContent) + 1;
-        totalCount += 1;
-        changeButton(searchSpan);
-        handleCalculateGuest();
+    if (checkType === "child") {
+        if (parseInt(adultsC.textContent) === 0) {
+            searchSpan[0].textContent = parseInt(searchSpan[0].textContent) + 1;
+            adultsC.previousElementSibling.style.opacity = "1"
+            adultsC.previousElementSibling.style.cursor = "pointer";
+            childCount += 1;
+            totalCount += 1;
+            changeButton(searchSpan);
+            handleCalculateGuest();
+        } else {
+            searchSpan[0].textContent = parseInt(searchSpan[0].textContent) + 1;
+            childCount += 1;
+            changeButton(searchSpan);
+            handleCalculateGuest();
+        }
+    } else if (checkType === "kids") {
+        if (parseInt(adultsC.textContent) === 0) {
+            searchSpan[0].textContent = parseInt(searchSpan[0].textContent) + 1;
+            adultsC.previousElementSibling.style.opacity = "1"
+            adultsC.previousElementSibling.style.cursor = "pointer";
+            kidsCount += 1;
+            totalCount = 0 + kidsCount;
+            changeButton(searchSpan);
+            handleCalculateGuest();
+        } else {
+            searchSpan[0].textContent = parseInt(searchSpan[0].textContent) + 1;
+            kidsCount += 1;
+            changeButton(searchSpan);
+            handleCalculateGuest();
+        }
     } else {
         searchSpan[0].textContent = parseInt(searchSpan[0].textContent) + 1;
         totalCount += 1;
@@ -70,23 +94,35 @@ const handlePlusPeople = (event) => {
 
 const handleMinusPeople = (event) => {
     event.preventDefault();
-    const searchParent = event.path.filter(item => item.className === "plus_minus");
-    const checkChild = searchParent[0].previousElementSibling.className;
-    const searchSpan = Array.from(searchParent[0].children).filter(item => item.classList[0] === "count");
-    if (checkChild === "child") {
+    const searchParent = event.path.filter(item => item.className === "plus_minus"); // 클릭한 버튼에서 부모를 가지고 온다.
+    const checkType = searchParent[0].previousElementSibling.className; // adults, kids, child를 가지고 오기 위해
+    const searchSpan = Array.from(searchParent[0].children).filter(item => item.classList[0] === "count"); // 카운트를 하기 위해 span 태그를 가지고 옴
+    if (checkType === "child") { // 아이가 한 명일 경우와 두 명일 경우로 분리해야한다.
         if (parseInt(searchSpan[0].textContent) > 0) {
             searchSpan[0].textContent -= 1;
-            totalCount -= 1;
             childCount -= 1;
+            changeButton(searchSpan);
+            handleCalculateGuest();
+        }
+    } else if (checkType === "kids") {
+        if (parseInt(searchSpan[0].textContent) > 0) {
+            searchSpan[0].textContent -= 1;
+            kidsCount -= 1;
             changeButton(searchSpan);
             handleCalculateGuest();
         }
     } else {
         if (parseInt(searchSpan[0].textContent) > 0) {
-            searchSpan[0].textContent -= 1;
-            totalCount -= 1;
-            changeButton(searchSpan);
-            handleCalculateGuest();
+            if (parseInt(childC.textContent) >= 1 && parseInt(adultsC.textContent) === 1) {
+                return false;
+            } else if (parseInt(kidsC.textContent) >= 1 && parseInt(adultsC.textContent) === 1) {
+                return false;
+            } else {
+                searchSpan[0].textContent -= 1;
+                totalCount -= 1;
+                changeButton(searchSpan);
+                handleCalculateGuest();
+            }
         }
     }
 }
