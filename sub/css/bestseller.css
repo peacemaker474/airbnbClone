@@ -3,6 +3,7 @@
     height: 550px;
     margin: 0 auto;
     margin-top: 60px;
+    position: relative;
 }
 .copeland{
     background-image: url('../assets/copeland.jpg');
