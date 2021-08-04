@@ -10,6 +10,7 @@
     <script defer src="js/login.js"></script>
     <script defer src="js/scroll.js"></script>
     <script defer src="js/newsScreen.js"></script>
+    <script defer src="js/moodScreen.js"></script>
     <title>온라인 체험</title>
 </head>
 
@@ -733,7 +734,7 @@
                 <h2>올림픽 분위기에 흠뻑 취해보세요</h2>
                 <div class="content_clickbtn">
                     <a href="">보기(10개)</a>
-                    <button class="left_btn" type="submit">
+                    <button id="moodLeftBtn" class="left_btn" type="submit">
                         <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
                             role="presentation" focusable="false"
                             style="display: inline-block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
@@ -744,7 +745,7 @@
                             </g>
                         </svg>
                     </button>
-                    <button class="right_btn" type="submit">
+                    <button id="moodRightBtn" class="right_btn" type="submit">
                         <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
                             role="presentation" focusable="false"
                             style="display: inline-block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
@@ -757,7 +758,133 @@
                     </button>
                 </div>
             </div>
-            <div class="nations">
+            <div class="nations mood_nations">
+                <div class="nation">
+                    <div class="nation_image larry">
+                        <button class="soldout_btn" type="submit">매진</button>
+                        <button class="likes_btn" type="submit">
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                role="presentation" focusable="false"
+                                style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: rgb(255, 255, 255); stroke-width: 2; overflow: visible;">
+                                <path
+                                    d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="nation_information">
+                        <h3>미국</h3>
+                        <p>A Conversation with Larry Legend</p>
+                        <span>
+                            &#8361;115,210~/인
+                        </span>
+                    </div>
+                </div>
+                <div class="nation">
+                    <div class="nation_image gleadle">
+                        <button class="soldout_btn" type="submit">매진</button>
+                        <button class="likes_btn" type="submit">
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                role="presentation" focusable="false"
+                                style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: rgb(255, 255, 255); stroke-width: 2; overflow: visible;">
+                                <path
+                                    d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="nation_information">
+                        <h3>캐나다</h3>
+                        <p>The art of recovery with Liz Gleadle</p>
+                        <span>
+                            &#8361;18,341~/인
+                        </span>
+                    </div>
+                </div>
+                <div class="nation">
+                    <div class="nation_image peacock">
+                        <button class="soldout_btn" type="submit">매진</button>
+                        <button class="likes_btn" type="submit">
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                role="presentation" focusable="false"
+                                style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: rgb(255, 255, 255); stroke-width: 2; overflow: visible;">
+                                <path
+                                    d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="nation_information">
+                        <h3>영국</h3>
+                        <p>Don't Freak Out with Johnnie Peacock</p>
+                        <span>
+                            &#8361;63,382~/인
+                        </span>
+                    </div>
+                </div>
+                <div class="nation">
+                    <div class="nation_image patrick">
+                        <button class="soldout_btn" type="submit">매진</button>
+                        <button class="likes_btn" type="submit">
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                role="presentation" focusable="false"
+                                style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: rgb(255, 255, 255); stroke-width: 2; overflow: visible;">
+                                <path
+                                    d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="nation_information">
+                        <h3>미국</h3>
+                        <p>For the Love of Basketball with Patrick</p>
+                        <span>
+                            &#8361;115,210~/인
+                        </span>
+                    </div>
+                </div>
+                <div class="nation">
+                    <div class="nation_image amelia">
+                        <button class="soldout_btn" type="submit">매진</button>
+                        <button class="likes_btn" type="submit">
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                role="presentation" focusable="false"
+                                style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: rgb(255, 255, 255); stroke-width: 2; overflow: visible;">
+                                <path
+                                    d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="nation_information">
+                        <h3>미국</h3>
+                        <p>Supercharged health with Amelia Brodka</p>
+                        <span>
+                            &#8361;11,521~/인
+                        </span>
+                    </div>
+                </div>
+                <div class="nation">
+                    <div class="nation_image honnold">
+                        <button class="soldout_btn" type="submit">매진</button>
+                        <button class="likes_btn" type="submit">
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                role="presentation" focusable="false"
+                                style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: rgb(255, 255, 255); stroke-width: 2; overflow: visible;">
+                                <path
+                                    d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="nation_information">
+                        <h3>미국</h3>
+                        <p>Climbing Olympic Debut with Alex Honnold</p>
+                        <span>
+                            &#8361;17,282~/인
+                        </span>
+                    </div>
+                </div>
                 <div class="nation">
                     <div class="nation_image larry">
                         <button class="soldout_btn" type="submit">매진</button>
