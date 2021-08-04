@@ -1,10 +1,9 @@
 const newsLeftBtn = document.getElementById("newsLeftBtn");
 const newsRightBtn = document.getElementById("newsRightBtn");
 const news = document.querySelector(".news_lists");
-const newsList = document.querySelectorAll(".news");
 
 
-const handleMoveLeft = (event) => {
+const moveNewsLeft = (event) => {
     event.preventDefault();
     if (parseInt(news.style.left) === 0) {
         newsRightBtn.style.opacity = "1";
@@ -13,14 +12,14 @@ const handleMoveLeft = (event) => {
         newsLeftBtn.style.opacity = "0.2";
         newsLeftBtn.style.cursor = "not-allowed";
     } else {
-        news.style.left = `${parseInt(news.style.left) + 30}%`;
+        news.style.left = `${parseInt(news.style.left) + 42}rem`;
     }
 }
 
-const handleMoveRight = (event) => {
+const moveNewsRight = (event) => {
     event.preventDefault();
-    if (parseInt(news.style.left) > -120) {
-        news.style.left = `${parseInt(news.style.left) - 30}%`;
+    if (parseInt(news.style.left) > -140) {
+        news.style.left = `${parseInt(news.style.left) - 42}rem`;
         newsLeftBtn.style.opacity = "1";
         newsLeftBtn.style.cursor = "pointer";
     } else {
@@ -32,8 +31,8 @@ const handleMoveRight = (event) => {
 
 
 function moveNewsScreen() {
-    newsLeftBtn.addEventListener("click", handleMoveLeft);
-    newsRightBtn.addEventListener("click", handleMoveRight);
+    newsLeftBtn.addEventListener("click", moveNewsLeft);
+    newsRightBtn.addEventListener("click", moveNewsRight);
     news.style.left = "0%";
 }
 
