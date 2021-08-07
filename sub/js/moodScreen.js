@@ -3,36 +3,24 @@ const moodRightBtn = document.getElementById("moodRightBtn");
 const mood = document.querySelector(".mood_nations");
 const nationWidth = document.querySelector(".nation");
 
-let leftCount = 0;
-let rightCount = 0;
+let count = 0;
 
-const moveMoodLeft = (event) => {
+
+const handleMoveScreen = (event) => {
     event.preventDefault();
-    if (leftCount === 0) {
+    if (count === 0) {
         mood.style.left = `-${mood.offsetWidth}px`;
-        leftCount--;
+        count--;
     } else {
         mood.style.left = `0px`;
-        leftCount++;
-    }
-}
-
-const moveMoodRight = (event) => {
-    event.preventDefault();
-    if (rightCount === 0) {
-        mood.style.left = `-${mood.offsetWidth}px`;
-        rightCount--;
-    } else {
-        mood.style.left = `0px`;
-        rightCount++;
+        count++;
     }
 }
 
 
 function moveMoodScreen() {
-    moodLeftBtn.addEventListener("click", moveMoodLeft);
-    moodRightBtn.addEventListener("click", moveMoodRight);
+    moodLeftBtn.addEventListener("click", handleMoveScreen);
+    moodRightBtn.addEventListener("click", handleMoveScreen);
 }
 
-console.log(mood.offsetWidth);
 moveMoodScreen();

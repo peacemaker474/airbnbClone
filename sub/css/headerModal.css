@@ -9,7 +9,6 @@
     left: -210%;
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
 }
 
 .login_modal > a{

@@ -3,6 +3,7 @@
     height: 550px;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
 }
 
 .tokyo{

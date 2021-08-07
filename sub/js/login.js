@@ -1,6 +1,6 @@
 // 로그인 모달
-const loginBox = document.querySelector(".login_position");
-const login = document.querySelector(".login_modal");
+const userLogin = document.querySelector(".user_login");
+const controlModal = document.querySelector(".login_modal");
 // 언어 및 통화 모달
 const language = document.querySelector(".language_overray");
 const cancle = document.querySelector(".cancle_btn");
@@ -17,16 +17,20 @@ const handleLanguageModal = () => {
 }
 
 const handleCloseLogin = () => {
-    login.classList.add("show_login");
+    controlModal.classList.add("show_login");
 }
 
 const handleLoginModal = (event) => {
     event.stopPropagation();
-    login.classList.toggle("show_login");
+    controlModal.classList.toggle("show_login");
 }
 
-loginBox.addEventListener("click", handleLoginModal);
-choice.addEventListener("click", handleLanguageModal);
-cancle.addEventListener("click", handleLanguageModal);
-document.body.addEventListener("click", handleCloseLogin);
-a.addEventListener("click", handlePrevent);
+function init() {
+    userLogin.addEventListener("click", handleLoginModal);
+    choice.addEventListener("click", handleLanguageModal);
+    cancle.addEventListener("click", handleLanguageModal);
+    document.body.addEventListener("click", handleCloseLogin);
+    a.addEventListener("click", handlePrevent);
+}
+
+init();

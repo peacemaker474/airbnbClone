@@ -1,42 +1,41 @@
-.nav_underbar{
-    width: 100%;
-    height: 80px;
-    box-shadow: rgba(0 0 0 / 8%) 0px 1px 12px;
+.user_container{
     position: relative;
     top: 0;
     left: 0;
     z-index: 1;
+    box-shadow: rgba(0 0 0 / 8%) 0px 1px 12px;
 }
 /* nav와 nav ui 영역 */
-.top_nav {
+.user_nav {
     width: 63.4%;
-    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
 }
 /* 로고 색깔 */
-.logobox > a {
+.main_logo > a {
     color: rgb(255, 56, 92);
 }
 
-.user{
+/* 사용자 메뉴 영역 */
+.user_menu{
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     height: 80px;
 }
 
 /* 호스트 되기, 언어 선택 부분 */
-.user > li > a{
+.user_menu > li > a{
     text-decoration: none;
     color: rgb(10, 10, 10);
     font-weight: 600;
 }
 
-.user .become_host,
-.user .choice_language{
+/* 사용자 메뉴 공통 영역 */
+
+.user_menu .become_host,
+.user_menu .choice_language{
     width: 96px;
     height: 40px;
     text-align: center;
@@ -45,26 +44,29 @@
     border-radius: 20px;
 }
 
-.user .become_host:hover,
-.user .choice_language:hover{
+.user_menu .become_host:hover,
+.user_menu .choice_language:hover{
     background-color: rgba(128, 128, 128, 0.05);
 }
 
-.user .choice_language {
+/* 사용자 메뉴 중 지구본 모양 */
+
+.user_menu .choice_language {
     width: 46px;
     line-height: 45px;
     margin-right: 10px;
 }
 
 /* 유저 로그인, 회원가입, 햄버거 버튼 */
-.user_login {
+
+.user_login_btn {
     all: unset;
     width: 77px;
     height: 42px;
     border-radius: 20px;
     cursor: pointer;
 }
-.user_login .login_svg{
+.user_login_btn .profile_svg{
     width: 100%;
     height: 100%;
     display: flex;
@@ -74,38 +76,39 @@
     border-radius: 20px;
 }
 
-.user_login:hover{
+.user_login_btn:hover{
     box-shadow: 2px 4px rgb(0 0 0 / 18%);
     transition: box-shadow 0.2s ease-in-out;
 }
 
-.login_svg > svg {
+.profile_svg > svg {
     display: inline-block;
     margin-left: 5px;
     color: rgba(128, 128, 128, 0.9);
 }
 
-.login_svg > svg:first-child {
+.profile_svg > svg:first-child {
     color: rgba(10, 10, 10, 0.9);
     margin-right: 5px;
 }
 
-.login_position {
+.user_login {
     position: relative;
 }
 
-/* header 메인 타이틀 부분 */
+/* 메인 배경, 타이틀 부분 */
 
-.header_menu {
+.main_cotent {
     width: 100%;
     height: 961px;
     background-image: url("https://a0.muscache.com/im/pictures/f13f758e-0629-4cb2-b728-3e2f0dc3772b.jpg");
     background-size: cover;
-    position: relative;
     display: flex;
     justify-content: center;
 }
-.header_menu .header_title{
+
+/* 메인 타이틀 부분 */
+.main_cotent .main_title{
     width: 63.4%;
     height: 100%;
     display: flex;
@@ -113,13 +116,13 @@
     justify-content: center;
 }
 
-.header_title > h1{
+.main_title > h1{
     font-size: 52px;
     font-weight: 600;
     margin-bottom: 30px;
 }
 
-.header_title > span {
+.main_title > span {
     max-width: 360px;
     word-break: keep-all;
     line-height: 1.5em;
@@ -133,6 +136,7 @@
     margin-bottom: 40px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.2);
     background-color: white;
+    position: relative;
 }
 
 .menu_nav {
@@ -191,13 +195,13 @@
 }
 
 @media screen and (max-width: 1440px) {
-    .top_nav{
+    .user_nav{
         width: 88.9%;
     }
-    .header_menu{
+    .main_cotent{
         height: 540px;
     }
-    .header_menu .header_title{
+    .main_cotent .main_title{
         width: 88.9%;
         height: 540px;
     }

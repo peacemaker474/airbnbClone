@@ -4,6 +4,7 @@
     margin: 0 auto;
     margin-top: 60px;
     position: relative;
+    overflow: hidden;
 }
 .copeland{
     background-image: url('../assets/copeland.jpg');
