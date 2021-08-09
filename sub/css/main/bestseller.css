@@ -1,0 +1,58 @@
+.bestseller{
+    width: 63.4%;
+    height: 550px;
+    margin: 0 auto;
+    margin-top: 60px;
+    position: relative;
+    overflow: hidden;
+}
+.copeland{
+    background-image: url('../../assets/copeland.jpg');
+}
+
+.copeland:hover {
+    background-image: url('../../assets/copelandhover.jpg');
+}
+
+.benoit{
+    background-image: url('../../assets/benoit.jpeg');
+}
+
+.benoit:hover{
+    background-image: url('../../assets/benoithover.jpeg');
+}
+
+.deena{
+    background-image: url('../../assets/deena.jpeg');
+}
+
+.deena:hover{
+    background-image: url('../../assets/deenahover.jpeg');
+}
+
+.gillete{
+    background-image: url('../../assets/gillete.jpg');
+}
+
+.gillete:hover{
+    background-image: url('../../assets/gilletehover.jpeg');
+}
+
+.positive{
+    background-image: url('../../assets/positive.jpg');
+}
+
+.neiswender{
+    background-image: url('../../assets/neiswender.jpg');
+}
+
+.neiswender:hover{
+    background-image: url('../../assets/neiswenderhover.jpg');
+}
+
+@media screen and (max-width: 1440px) {
+    .bestseller {
+        width: 88.9%;
+        height: 474px;
+    }
+}

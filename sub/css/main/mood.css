@@ -85,54 +85,54 @@
 /* 분위기별 사진 */
 
 .larry{
-    background-image: url('../assets/usa.jpeg');
+    background-image: url('../../assets/usa.jpeg');
 }
 
 .larry:hover{
-    background-image: url('../assets/usahover.jpeg');
+    background-image: url('../../assets/usahover.jpeg');
 }
 
 .gleadle {
-    background-image: url('../assets/canada.jpeg');
+    background-image: url('../../assets/canada.jpeg');
     background-position: 50% 50%;
 }
 
 .gleadle:hover {
-    background-image: url('../assets/canadahover.jpeg');
+    background-image: url('../../assets/canadahover.jpeg');
 }
 
 .peacock {
-    background-image: url('../assets/england.jpeg');
+    background-image: url('../../assets/england.jpeg');
     background-position: 50% 50%;
 }
 
 .peacock:hover{
-    background-image: url('../assets/englandhover.jpg');
+    background-image: url('../../assets/englandhover.jpg');
 }
 
 .patrick{
-    background-image: url('../assets/usabasketball.jpeg');
+    background-image: url('../../assets/usabasketball.jpeg');
 }
 
 .patrick:hover{
-    background-image: url('../assets/usabasketballhover.jpeg');
+    background-image: url('../../assets/usabasketballhover.jpeg');
     background-position: 50% 50%;
 }
 
 .amelia{
-    background-image: url('../assets/usasuper.jpg');
+    background-image: url('../../assets/usasuper.jpg');
 }
 
 .amelia:hover{
-    background-image: url('../assets/usasuperhover.jpeg');
+    background-image: url('../../assets/usasuperhover.jpeg');
 }
 
 .honnold {
-    background-image: url('../assets/usaclimbing.jpeg');
+    background-image: url('../../assets/usaclimbing.jpeg');
 }
 
 .honnold:hover {
-    background-image: url('../assets/usaclimbinghover.jpeg');
+    background-image: url('../../assets/usaclimbinghover.jpeg');
     background-position: 50% 50%;
 }
 

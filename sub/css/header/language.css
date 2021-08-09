@@ -1,48 +1,6 @@
-.login_modal {
-    width: 240px;
-    height: 237px;
-    background-color: white;
-    box-shadow: rgb(0 0 0 / 12%) 0px 2px 16px;
-    border-radius: 10px;
-    position: absolute;
-    bottom: -605%;
-    left: -210%;
-    display: flex;
-    flex-direction: column;
-}
-
-.login_modal > a{
-    font-size: 14px;
-    color:black;
-    text-decoration: none;
-    padding-left: 15px;
-    height: 42px;
-    line-height: 42px;
-}
-
-.login_modal > a:hover{
-    background-color:rgba(128, 128, 128, 0.05);
-}
-
-.login_modal > a:first-child {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.login_line {
-    width: 100%;
-    border-top:1px solid rgba(128, 128, 128, 0.3);
-    margin: 5px 0;
-}
-
-.show_login {
-    display: none;
-}
-
 /* 언어 설정 및 통화 모달 */
 
-.language_overray{
-    content: '';
+.language_modal{
     position: fixed;
     top: 0;
     left: 0;
@@ -50,10 +8,9 @@
     height: 100%;
     background-color: rgba(10, 10, 10, 0.35);
     z-index: 1999;
-    overflow-y: hidden;
 }
 
-.language_modal{
+.language_container{
     width: 1032px;
     height: 939px;
     background-color: white;
@@ -66,7 +23,9 @@
     border-radius: 15px;
 }
 
-.cancle_btn {
+/* 닫기 버튼 */
+
+.close_btn {
     all: unset;
     width: 30px;
     height: 30px;
@@ -80,17 +39,19 @@
     cursor: pointer;
 }
 
-.cancle_btn:hover{
+.close_btn:hover{
     background-color: rgba(128, 128, 128, 0.1);
 }
 
-.language_price{
+/* 언어 및 통화 선택 영역 */
+
+.choice_lists{
     width: 95%;
     margin: 80px auto 20px auto;
     border-bottom: 1px solid rgba(128, 128, 128, 0.3);
 }
 
-.language_price > button {
+.choice_lists > button {
     all: unset;
     height: 38px;
     font-size: 14px;
@@ -99,10 +60,10 @@
     font-weight: bold;
     margin-bottom: 8px;
     position: relative;
-    transition: all 1s ease-out;
+    transition: background-color 0.4s ease-out;
 }
 
-.language_price > button::after {
+.choice_lists > button::after {
     content: '';
     position: absolute;
     bottom: -30%;
@@ -113,9 +74,11 @@
 
 }
 
-.language_price > button:hover{
+.choice_lists > button:hover{
     background-color: rgba(128, 128, 128, 0.07);
 }
+
+/* 추천 언어 및 지역 영역 */
 
 .recommend_location,
 .choice_location {
@@ -134,9 +97,11 @@
     color: #484848;
 }
 
+/* 추천 언어 및 지역 리스트 */
+
 .contries {
     display: grid;
-    grid-template-columns: 176px 176px 176px 176px 176px;
+    grid-template-columns: repeat(5, 176px);
     grid-template-rows: 72px;
     grid-gap: 15px;
     align-items: center;
@@ -174,8 +139,10 @@
     padding-top: 10px;
 }
 
+/* 언어와 지역 선택 영역에서 추가 설정*/
+
 .chocie {
-    grid-template-rows: 80px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px 72px;
+    grid-template-rows: repeat(18, 72px);
     margin-top: 15px;
 }
 
@@ -188,6 +155,6 @@
     font-weight: 400;
 }
 
-.modal_language {
+.show_language {
     display: none;
 }

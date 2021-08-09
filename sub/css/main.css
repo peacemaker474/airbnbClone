@@ -1,12 +1,12 @@
 @import url(reset.css);
-@import url(header.css);
-@import url(mood.css);
-@import url(startsoon.css);
-@import url(bestseller.css);
-@import url(weeknews.css);
-@import url(enjoyweekend.css);
+@import url(header/header.css);
+@import url(main/mood.css);
+@import url(main/startsoon.css);
+@import url(main/bestseller.css);
+@import url(main/weeknews.css);
+@import url(main/enjoyweekend.css);
 @import url(footer.css);
-@import url(headerModal.css);
+@import url(header/language.css);
 
 body{
     width: 100vw;

@@ -71,20 +71,20 @@
 /* 사진 */
 
 .olympic_news{
-    background-image: url(../assets/news_first.jpg);
+    background-image: url("../../assets/news_first.jpg");
     background-size: cover;
 }
 
 .japan_news {
-    background-image: url(../assets/japan.jpg);
+    background-image: url("../../assets/japan.jpg");
     background-size: cover;
 }
 .world_popular_news {
-    background-image: url(../assets/worldpopular.jpg);
+    background-image: url("../../assets/worldpopular.jpg");
     background-size: cover;
 }
 .online_experience_news {
-    background-image: url(../assets/onlineex.jpg);
+    background-image: url("../../assets/onlineex.jpg");
     background-size: cover;
 }
 

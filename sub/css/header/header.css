@@ -35,7 +35,7 @@
 /* 사용자 메뉴 공통 영역 */
 
 .user_menu .become_host,
-.user_menu .choice_language{
+.user_menu .user_language{
     width: 96px;
     height: 40px;
     text-align: center;
@@ -45,13 +45,13 @@
 }
 
 .user_menu .become_host:hover,
-.user_menu .choice_language:hover{
+.user_menu .user_language:hover{
     background-color: rgba(128, 128, 128, 0.05);
 }
 
 /* 사용자 메뉴 중 지구본 모양 */
 
-.user_menu .choice_language {
+.user_menu .user_language {
     width: 46px;
     line-height: 45px;
     margin-right: 10px;
@@ -127,6 +127,52 @@
     word-break: keep-all;
     line-height: 1.5em;
 }
+
+/* 로그인 모달 영역 */
+
+.login_modal {
+    width: 240px;
+    height: 237px;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 12%) 0px 2px 16px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -605%;
+    left: -210%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login_modal > a{
+    font-size: 14px;
+    color:black;
+    text-decoration: none;
+    padding-left: 15px;
+    height: 42px;
+    line-height: 42px;
+}
+
+.login_modal > a:hover{
+    background-color:rgba(128, 128, 128, 0.05);
+}
+
+.login_modal > a:first-child {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.login_line {
+    width: 100%;
+    border-top:1px solid rgba(128, 128, 128, 0.3);
+    margin: 5px 0;
+}
+
+.show_login {
+    display: none;
+}
+
+
+
 
 /* Main Nav 영역 */
 

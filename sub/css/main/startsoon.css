@@ -76,21 +76,21 @@
 }
 
 .keyna_img{
-    background-image: url('../assets/nairobi.jpeg');
+    background-image: url('../../assets/nairobi.jpeg');
     background-size: cover;
 }
 
 .keyna_img:hover{
-    background-image:url('../assets/nairobihover.jpeg');
+    background-image:url('../../assets/nairobihover.jpeg');
 }
 
 .china_img {
-    background-image: url('../assets/china.jpeg');
+    background-image: url('../../assets/china.jpeg');
     background-size: cover;
 }
 
 .china_img:hover{
-    background-image:url('../assets/chinahover.jpeg');
+    background-image:url('../../assets/chinahover.jpeg');
 }
 
 @media screen and (max-width:1440px) {
