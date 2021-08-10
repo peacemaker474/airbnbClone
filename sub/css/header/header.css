@@ -1,3 +1,4 @@
+/* 최상단 유저 Nav 영역 */
 .user_container{
     position: relative;
     top: 0;
@@ -5,7 +6,7 @@
     z-index: 1;
     box-shadow: rgba(0 0 0 / 8%) 0px 1px 12px;
 }
-/* nav와 nav ui 영역 */
+
 .user_nav {
     width: 63.4%;
     display: flex;
@@ -172,86 +173,8 @@
 }
 
 
-
-
-/* Main Nav 영역 */
-
-.main_nav {
-    width: 100%;
-    height: 80px;
-    margin-bottom: 40px;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
-    background-color: white;
-    position: relative;
-}
-
-.menu_nav {
-    width: 63.4%;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.menu {
-    display: flex;
-    border-right: 1px solid rgba(128, 128, 128, 0.9);
-}
-
-.contents {
-    display: flex;
-    justify-content: flex-start;
-    overflow:hidden;
-    margin-left: 10px;
-    position: relative;
-
-}
-.menu > li:hover > button {
-    border: 1px solid black;
-}
-
-.menu > li > button,
-.contents > li > button {
-    all: unset;
-    height: 36px;
-    border: 1px solid rgba(128, 128, 128, 0.6);
-    font-size: 14px;
-    margin-right: 10px;
-    border-radius: 20px;
-    padding: 0 15px;
-    white-space: nowrap;
-}
-
-.contents > li > button{
-    background-color: rgba(128, 128, 128, 0.1);
-    border: 0;
-}
-
-.menu_filter {
-    display: flex;
-    align-items: center;
-}
-
-.menu_filter > span {
-    padding-left: 8px;
-}
-
 @media screen and (max-width: 1440px) {
     .user_nav{
-        width: 88.9%;
-    }
-    .main_cotent{
-        height: 540px;
-    }
-    .main_cotent .main_title{
-        width: 88.9%;
-        height: 540px;
-    }
-    .menu_nav{
         width: 88.9%;
     }
 }

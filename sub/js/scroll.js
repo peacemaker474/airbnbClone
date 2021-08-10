@@ -1,4 +1,4 @@
-const mainNav = document.querySelector(".main_nav");
+const mainNav = document.querySelector(".filter_container");
 
 const handleMenuScroll = (event) => {
     const scrollTop = event.target.documentElement.scrollTop;

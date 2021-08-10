@@ -1,0 +1,78 @@
+/* Main Nav 영역 */
+
+.filter_container {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    background-color: white;
+    position: relative;
+}
+
+.filter_menu {
+    width: 63.4%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 조건 검색, 필터, 날짜, 인원 수 영역*/
+.condition {
+    display: flex;
+    border-right: 1px solid rgba(128, 128, 128, 0.9);
+}
+
+/* 조건 필터링 후 내용 영역 */
+.condition_contents {
+    display: flex;
+    justify-content: flex-start;
+    overflow:hidden;
+    margin-left: 10px;
+}
+
+.condition > li:hover > button {
+    border: 1px solid black;
+}
+
+.condition > li > button,
+.condition_contents > li > button {
+    all: unset;
+    height: 36px;
+    border: 1px solid rgba(128, 128, 128, 0.6);
+    font-size: 14px;
+    margin-right: 10px;
+    border-radius: 20px;
+    padding: 0 15px;
+    white-space: nowrap;
+}
+
+.condition_contents > li > button{
+    background-color: rgba(128, 128, 128, 0.1);
+    border: 0;
+}
+/* 조건 중 필터 영역 */
+.filter {
+    display: flex;
+    align-items: center;
+}
+
+.filter > span {
+    padding-left: 8px;
+}
+
+@media screen and (max-width:1440px) {
+    .main_cotent{
+        height: 540px;
+    }
+    .main_cotent .main_title{
+        width: 88.9%;
+        height: 540px;
+    }
+    .filter_menu{
+        width: 88.9%;
+    }
+}
