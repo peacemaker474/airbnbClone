@@ -1,17 +1,17 @@
-.week_news{
+.week_enroll{
     width: 63.4%;
     height: 420px;
     margin: 0 auto;
     position: relative;
 }
 
-.week_news .content_title > h2{
+.week_enroll .content_title > h2{
     font-size: 26px;
     font-weight: 600;
 }
 
 
-.news_lists{
+.collection_lists{
     display: grid;
     grid-template-columns: repeat(4, 590px);
     grid-template-rows: 330px;
@@ -23,25 +23,25 @@
     transition: left 0.8s ease-in-out;
 }
 
-.news_list{
+.collection{
     width: 100%;
     height: 100%;
     border-radius: 10px;
     position: relative;
 }
 
-.news_content{
+.c_content{
     width: 270px;
     height: 248px;
     color: white;
     padding: 20px 0 0 20px;
 }
 
-.news_content > span {
+.c_content > span {
     font-size: 12px;
 }
 
-.news_content > h3{
+.c_content > h3{
     font-size: 25px;
     font-weight: 500;
     word-break: keep-all;
@@ -70,29 +70,29 @@
 
 /* 사진 */
 
-.olympic_news{
+.c_olympic{
     background-image: url("../../assets/news_first.jpg");
     background-size: cover;
 }
 
-.japan_news {
+.c_japan {
     background-image: url("../../assets/japan.jpg");
     background-size: cover;
 }
-.world_popular_news {
+.c_world_popular {
     background-image: url("../../assets/worldpopular.jpg");
     background-size: cover;
 }
-.online_experience_news {
+.c_online_experience {
     background-image: url("../../assets/onlineex.jpg");
     background-size: cover;
 }
 
 @media screen and (max-width:1440px) {
-    .week_news {
+    .week_enroll {
         width: 88.9%;
     }
-    .week_news .content_title > h2{
+    .week_enroll .content_title > h2{
         font-size: 32px;
         font-weight: bold;
         margin-bottom: 10px;

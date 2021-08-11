@@ -4,8 +4,8 @@
 @import url(main/mood.css);
 @import url(main/startsoon.css);
 @import url(main/bestseller.css);
-@import url(main/weeknews.css);
-@import url(main/enjoyweekend.css);
+@import url(main/enroll.css);
+@import url(main/experience.css);
 @import url(footer.css);
 @import url(header/language.css);
 
@@ -32,6 +32,7 @@ footer{
 }
 
 /* 보기 및 버튼 부분*/
+
 .content_title{
     display: flex;
     justify-content: space-between;
@@ -43,14 +44,14 @@ footer{
     font-weight: bold;
 }
 
-.content_clickbtn > a{
+.click_btn > a{
     font-size: 14px;
     font-weight: bold;
     color:black;
     padding-right: 15px
 }
 
-.content_clickbtn > button{
+.click_btn > button{
     all:unset;
     width: 32px;
     height: 32px;
@@ -60,7 +61,7 @@ footer{
     margin: 20px 0 5px 0;
     cursor: pointer;
 }
-.content_clickbtn > button:last-child{
+.click_btn > button:last-child{
     margin-right: 0;
 }
 

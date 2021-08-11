@@ -1,4 +1,4 @@
-.enjoy_weekend{
+.week_experience{
     width: 63.4%;
     height: 550px;
     margin: 0 auto;
@@ -43,7 +43,7 @@
 }
 
 @media screen and (max-width: 1440px) {
-    .enjoy_weekend {
+    .week_experience {
         width: 88.9%;
         height: 524px;
     }

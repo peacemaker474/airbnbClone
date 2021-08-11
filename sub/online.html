@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="./css/main.css" />
     <script defer src="js/login.js"></script>
     <script defer src="js/scroll.js"></script>
-    <script defer src="js/newsScreen.js"></script>
-    <script defer src="js/moodScreen.js"></script>
+    <script defer src="js/screen.js"></script>
     <title>온라인 체험</title>
 </head>
 
@@ -732,7 +731,7 @@
         <section class="olympic_mood">
             <div class="content_title">
                 <h2>올림픽 분위기에 흠뻑 취해보세요</h2>
-                <div class="content_clickbtn">
+                <div class="click_btn">
                     <a href="">보기(10개)</a>
                     <button id="moodLeftBtn" class="left_btn" type="submit">
                         <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
@@ -1016,7 +1015,7 @@
         <section class="startgame_soon">
             <div class="content_title">
                 <h2>6시간 이내 시작</h2>
-                <div class="content_clickbtn">
+                <div class="click_btn">
                     <a href="">보기(54개)</a>
                     <button class="left_btn" type="submit">
                         <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
@@ -1096,7 +1095,7 @@
         <section class="bestseller">
             <div class="content_title">
                 <h2>베스트셀러 체험</h2>
-                <div class="content_clickbtn">
+                <div class="click_btn">
                     <a href="">보기(451개)</a>
                     <button class="left_btn" type="submit">
                         <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
@@ -1247,11 +1246,11 @@
                 </div>
             </div>
         </section>
-        <section class="week_news">
+        <section class="week_enroll">
             <div class="content_title">
                 <h2>이번 주 신규 등록 체험</h2>
-                <div class="content_clickbtn">
-                    <button id="newsLeftBtn" class="left_btn" type="submit">
+                <div class="click_btn">
+                    <button id="enrollLeftBtn" class="left_btn" type="submit">
                         <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
                             role="presentation" focusable="false"
                             style="display: inline-block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
@@ -1262,7 +1261,7 @@
                             </g>
                         </svg>
                     </button>
-                    <button id="newsRightBtn" class="right_btn" type="submit">
+                    <button id="enrollRightBtn" class="right_btn" type="submit">
                         <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
                             role="presentation" focusable="false"
                             style="display: inline-block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
@@ -1275,37 +1274,37 @@
                     </button>
                 </div>
             </div>
-            <div class="news_lists">
-                <div class="news">
-                    <div class="news_list olympic_news">
-                        <div class="news_content">
+            <div class="collection_lists">
+                <div class="c_lists">
+                    <div class="collection c_olympic">
+                        <div class="c_content">
                             <span>컬렉션</span>
                             <h3>올림픽 및 패럴림픽 출전 선수와 함께하세요</h3>
                         </div>
                         <button class="see_all" type="submit">모두 보기</button>
                     </div>
                 </div>
-                <div class="news">
-                    <div class="news_list japan_news">
-                        <div class="news_content">
+                <div class="c_lists">
+                    <div class="collection c_japan">
+                        <div class="c_content">
                             <span>컬렉션</span>
                             <h3>일본 문화 체험</h3>
                         </div>
                         <button class="see_all" type="submit">모두 보기</button>
                     </div>
                 </div>
-                <div class="news">
-                    <div class="news_list world_popular_news">
-                        <div class="news_content">
+                <div class="c_lists">
+                    <div class="collection c_world_popular">
+                        <div class="c_content">
                             <span>컬렉션</span>
                             <h3>전 세계 인기 체험</h3>
                         </div>
                         <button class="see_all" type="submit">모두 보기</button>
                     </div>
                 </div>
-                <div class="news">
-                    <div class="news_list online_experience_news">
-                        <div class="news_content">
+                <div class="c_lists">
+                    <div class="collection c_online_experience">
+                        <div class="c_content">
                             <span>컬렉션</span>
                             <h3>여행에 대한 갈증을 풀어줄 온라인 체험</h3>
                         </div>
@@ -1314,10 +1313,10 @@
                 </div>
             </div>
         </section>
-        <section class="enjoy_weekend">
+        <section class="week_experience">
             <div class="content_title">
                 <h2>이번 주말에 즐길 수 있는 체험</h2>
-                <div class="content_clickbtn">
+                <div class="click_btn">
                     <a href="">보기(834개)</a>
                     <button class="left_btn" type="submit">
                         <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
@@ -1466,7 +1465,6 @@
                 </div>
             </div>
         </section>
-
     </main>
     <footer>
         <section class="support">
