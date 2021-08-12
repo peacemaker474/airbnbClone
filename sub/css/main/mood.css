@@ -6,81 +6,6 @@
     overflow-x: hidden;
 }
 
-/* 올림픽 분위기 내용물 */
-.nations{
-    display: grid;
-    grid-template-columns: repeat(12, 257px);
-    grid-template-rows: 418px;
-    grid-gap: 15px;
-    position: absolute;
-    width: 100%;
-    left: 0px;
-    transition: left 0.3s ease-out;
-}
-.nation{
-    width: 254px;
-    height: 418px;
-    margin-top: 15px;
-}
-
-.nation:last-child{
-    margin-right: 0;
-}
-
-.nation_image{
-    width: 100%;
-    height: 338px;
-    border-radius: 10px;
-    display: flex;
-    background-size: cover;
-    position: relative;
-}
-.nation_image:hover{
-    transition: background-image 0.8s;
-    background-size: cover;
-}
-
-.likes_btn {
-    all: unset;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    margin: 5px;
-    position: absolute;
-    top:1%;
-    right: 1%;
-}
-
-.soldout_btn {
-    all: unset;
-    text-align: center;
-    width: 40px;
-    height: 25px;
-    background-color: white;
-    font-size: 12px;
-    font-weight: 600;
-    border-radius: 5px;
-    margin: 10px;
-}
-
-/* 국가, 가격 정보 */
-
-.nation_information > h3{
-    font-size: 14px;
-    color:rgba(128, 128, 128, 0.8);
-    margin: 10px 0;
-}
-
-.nation_information > p {
-    font-size: 16px;
-    margin-bottom: 10px;
-    line-height: 1.3em;
-}
-
-.nation_information > span{
-    font-size: 15px;
-    font-weight: bold;
-}
 
 /* 분위기별 사진 */
 
@@ -140,12 +65,5 @@
     .olympic_mood {
         width: 88.9%;
         height: 494px;
-    }
-    
-    .nations {
-        height: 444px;
-    }
-    .nation_image{
-        height: 264px;
     }
 }
