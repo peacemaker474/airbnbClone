@@ -2,10 +2,12 @@
 
 에어비앤비 피그마 템플릿을 활용한 클론코딩 및 미니 프로젝트 진행예정.
 
-  ⏩ HTML, CSS Refactoring 완료 후 추후 진행 예정..
+  ✅ 온라인 체험 영역 HTML, CSS Refactoring 완료. (08.12.)
   
      => 08.07 (온라인 체험 header 영역 완료)
      => 08.09 (온라인 체험 language 영역 완료)
+  
+  ⏩ 메인 영역 HTML, CSS 만들고, Refactoring. 진행중..
 
   ### 2021.07.26
   
